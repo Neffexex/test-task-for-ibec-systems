@@ -1,0 +1,54 @@
+@import "variable";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+a, a:hover {
+  text-decoration: none;
+}
+
+
+
+.navbar {
+  padding: 0;
+}
+
+
+button {
+  border-radius: 30px;
+  padding: 16px 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+
+.gray {
+  background-color: #333;
+}
+
+
+.accent {
+  background-color: $accent-color;
+}
+
+.light-accent {
+  background-color: lighten($accent-color, 20%);
+}

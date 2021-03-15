@@ -1,0 +1,37 @@
+@import "variable";
+
+.header {
+  .logo {
+    margin-right: 50px;
+  }
+  li {
+    margin: 0 15px;
+    a {
+      color: $gray-color;
+      padding-bottom: 5px;
+    }
+  }
+  .active {
+    color: #333333;
+    position: relative;
+    &:before {
+      content: "";
+      background: $accent-color;
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+  }
+}
+
+
+@media only screen and (max-width: 968px) {
+  .header {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
